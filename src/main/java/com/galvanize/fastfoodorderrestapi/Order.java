@@ -54,13 +54,13 @@ public class Order {
 //        this.lastUpdatedAt = lastUpdatedAt;
 //    }
 
-//    public Long getId() {
-//        return id;
-//    }
-//
-//    public void setId(Long id) {
-//        this.id = id;
-//    }
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getCustomerName() {
         return customerName;
