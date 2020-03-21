@@ -45,14 +45,14 @@ public class Order {
         this.lastUpdatedAt = lastUpdatedAt;
     }
 
-//    public Order(Long id, String customerName, String createdAt, String status, String description, String lastUpdatedAt) {
-//        this.id = id;
-//        this.customerName = customerName;
-//        this.createdAt = createdAt;
-//        this.status = status;
-//        this.description = description;
-//        this.lastUpdatedAt = lastUpdatedAt;
-//    }
+    public Order(Long id, String customerName, String createdAt, String status, String description, String lastUpdatedAt) {
+        this.id = id;
+        this.customerName = customerName;
+        this.createdAt = createdAt;
+        this.status = status;
+        this.description = description;
+        this.lastUpdatedAt = lastUpdatedAt;
+    }
 
     public Long getId() {
         return id;

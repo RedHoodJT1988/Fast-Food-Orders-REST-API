@@ -35,6 +35,7 @@ public class OrderControllerTest {
     @MockBean
     OrderService orderService;
 
+    @MockBean
     OrderDao orderDao;
 
     @Test
@@ -72,9 +73,9 @@ public class OrderControllerTest {
       @Test
     void findOrderById() throws Exception{
 
-          Order newOrder = new Order("Jacob Jones", "03-21-20", "PENDING", "A burrito,pepsi,","03-21-20");
+          Order newOrder = new Order(1l,"Jacob Jones", "03-21-20", "PENDING", "A burrito,pepsi,","03-21-20");
 
-          Long id = 1l;
+          Long id = 1L;
           when(orderDao.findById(id));
 
           mockMvc.perform(get("/api/orders/1").accept(MediaType.APPLICATION_JSON))
