@@ -25,6 +25,7 @@ public class OrderServiceTest {
     void getAllOrders_whenEmpty_returnsOne() {
         // Setup
         Order order = new Order("Jane Doe", "2020-03-21", "PENDING", "Soft Taco, Bean Burrito, Large Pepsi", "2020-03-21" );
+        System.out.println(order);
         orderRepository.save(order);
         int expected = 1;
         // Exercise

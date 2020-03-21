@@ -1,14 +1,25 @@
 package com.galvanize.fastfoodorderrestapi;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Date;
 
+@Entity
+@Table(name = "orders")
 public class Order {
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     Long id;
+
+    @Column
     String customerName;
+    @Column
     String createdAt;
+    @Column
     String status;
+    @Column
     String description;
+    @Column
     String lastUpdatedAt;
 
     @Override
@@ -34,22 +45,22 @@ public class Order {
         this.lastUpdatedAt = lastUpdatedAt;
     }
 
-    public Order(Long id, String customerName, String createdAt, String status, String description, String lastUpdatedAt) {
-        this.id = id;
-        this.customerName = customerName;
-        this.createdAt = createdAt;
-        this.status = status;
-        this.description = description;
-        this.lastUpdatedAt = lastUpdatedAt;
-    }
+//    public Order(Long id, String customerName, String createdAt, String status, String description, String lastUpdatedAt) {
+//        this.id = id;
+//        this.customerName = customerName;
+//        this.createdAt = createdAt;
+//        this.status = status;
+//        this.description = description;
+//        this.lastUpdatedAt = lastUpdatedAt;
+//    }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
 
     public String getCustomerName() {
         return customerName;

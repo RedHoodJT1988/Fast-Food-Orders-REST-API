@@ -13,20 +13,26 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootTest
-@AutoConfigureMockMvc
-public class OrderTest {
-   @Mock
-    OrderRepository orderRepository;
+//@SpringBootTest
+//@AutoConfigureMockMvc
+//public class OrderTest {
+//   @Mock
+//    OrderRepository orderRepository;
+//
+//   @Test
+//    void countOrders() {
+//       String sql = "select count(*) from orders";
+//       List<Order> orders = new ArrayList<Order>();
+//       Long expected = 1L;
+//
+//       orders.add(new Order("Jane Doe", "2020-03-21", "PENDING", "Soft Taco, Bean Burrito, Large Pepsi", "2020-03-21"));
+//
+//       when(orderRepository.count()).thenReturn(expected);
+//   }
+//
+//
+//
+//}
 
-   @Test
-    void countOrders() {
-       String sql = "select count(*) from orders";
-       List orders = new ArrayList<Order>();
-       Long expected = 1L;
 
-       orders.add(new Order("Jane Doe", "2020-03-21", "PENDING", "Soft Taco, Bean Burrito, Large Pepsi", "2020-03-21"));
 
-       when(orderRepository.count()).thenReturn(expected);
-   }
-}
